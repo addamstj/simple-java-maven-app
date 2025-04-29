@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
                 sh 'mvn -B -DskipTests clean package'
             }
         }
