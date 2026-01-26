@@ -12,6 +12,8 @@ public class App
 
     public static void main(String[] args) {
         System.out.println(new App().getMessage());
+         System.out.println("Hello how are you doing, how about you");
+
     }
 
     private final String getMessage() {
